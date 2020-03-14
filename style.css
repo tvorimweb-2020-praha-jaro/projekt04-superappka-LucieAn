@@ -31,3 +31,142 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+.obal {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Hlavicka - Prvni radek nahore*/
+
+.hlavicka li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.hlavicka {
+    color:#48418e;
+}
+
+.odkaz {
+    font-weight: 700;
+}
+
+
+/* Flexbox */
+
+.kontejner {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Appka - Horni fialovy obdelnik */
+
+.appka {
+    width: 100%;
+    background-image: url(images/pozadi.jpg);
+    background-size: 960px 450px;
+    color:  white;
+    height: 400px;
+    padding-left: 40px;
+}
+
+.ruka {
+    position: relative;
+    right: -566px;
+    bottom: 137px;
+    height: 350px;
+}
+
+.nazev {
+    font-size: 75px;
+    font-weight: 400;
+    margin-top: 20px;
+    
+}
+
+.slogan {
+    font-size: 25px;
+    line-height: 1.1;
+    position: relative;
+    bottom: -40px;
+}
+
+.odkazy {
+    position: relative;
+    bottom: 230px;
+    display: flex;
+}
+
+.tlacitko1, .tlacitko2 {
+    color:  white;
+    text-decoration: none;
+    margin: 0 50px 0 0;
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 10px 20px;
+}
+
+.tlacitko1 {
+    background-color: #48418e;
+}
+
+
+/* Spodek - Spodni bily obdelnik */
+
+.spodek img {
+    width: 50px;
+}
+.spodek div {
+    text-align: center;
+}
+
+.spodek {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 calc(100% / 3);
+    flex-wrap: nowrap;
+    margin: 20px;
+}
+
+.titulek {
+    color: #25133d;
+    font-weight: 400;
+}
+
+/*footer*/
+
+.konec {
+    background-color: #48418e;
+    text-align: center;
+    color: white;
+    height: 40px;
+    font-size: smaller;
+    padding: 10px 0 10px 0;
+}
